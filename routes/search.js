@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/:query', async (req, res) => {
     const query = req.params.query;
-    const url = `https://www.amazon.it/s?k=${query}`;
+    const url = `https://api.crawlbase.com/?token=JQCGZpsUH0NreV5MFlDrcw&url=https%3A%2F%2Fwww.amazon.it/s?k=${query}`;
 
     try {
         const { data } = await axios.get(url);

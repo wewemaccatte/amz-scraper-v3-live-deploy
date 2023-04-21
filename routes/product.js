@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/:asin', async (req, res) => {
     const asin = req.params.asin;
-    const url = `https://www.amazon.it/dp/${asin}`;
+    const url = `https://api.crawlbase.com/?token=JQCGZpsUH0NreV5MFlDrcw&url=https%3A%2F%2Fwww.amazon.it/dp/${asin}`;
 
     try {
         const { data } = await axios.get(url);
