@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "app.js",
@@ -7,12 +8,16 @@
   ],
   "routes": [
     {
-      "src": "/api/search/:query",
-      "dest": "/api/search"
+      "src": "/api/product(.*)",
+      "dest": "app.js"
     },
     {
-      "src": "/api/product/:asin",
-      "dest": "/api/product"
+      "src": "/api/search(.*)",
+      "dest": "app.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "index.html"
     }
   ]
 }
