@@ -1,6 +1,6 @@
 {
   "name": "amazon-scraper-v3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TOP SCRAPER 2024",
   "main": "app.js",
   "scripts": {
